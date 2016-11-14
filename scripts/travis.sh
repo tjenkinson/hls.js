@@ -16,7 +16,10 @@ elif [ "${TRAVIS_MODE}" = "funcTests" ]; then
 	until [ $n -ge ${maxRetries} ]
 	do
 		if [ $n -gt 0 ]; then
-			echo "Retrying... Attempt: $((n+1))"
+      echo "Retrying... Attempt: $((n+1))"
+      delay = $((n*60))
+      echo "Waiting ${delay} seconds..."
+      sleep $delay
 		fi
 		npm run testfunc && break
 		n=$[$n+1]
