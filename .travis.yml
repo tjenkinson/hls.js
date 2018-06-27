@@ -30,8 +30,8 @@ jobs:
       env: TRAVIS_MODE=release
       deploy:
         provider: releases
-        api-key:
-          secure: "UrDfvgVXoHiAIbV+tjSCx+qfSVNVD9jonC+5fT0sAiYBkK1zogAJAwD2CSW+btX5lpbgcjit0qj6Ts/fE6Nayr/XZ0HRjlajQVu28XcwP0nkzjuPhoakgPioNCG8y9KvMs9ATNz8uKVS9X0kAMAzxkn569VhV3mGM2Rq880eyr3lxspCG8KIoPv8z5k6dgpi9fnLtO6Ic/iQjBtfg3ywYz71LEzLIMqBvuW6r/kiqFq6DJxFnbRqiyP3p7XUrkALTyXFz5OGde+mQcMwsullGRs+Q8ubmd8Y1A7mplIEO0iRA7jm/Mz3W2Xo/NpLznrqRQDUb6N1NU6TTVJRVceXS66LGPUbBjDh5nunYv2YHXsUR0LUeUKZWmcMwa74dTlKgT2p/t6HaT+VejvvDLQaIxwzccIm8uMUZsMEq9qn4qE0a08H2VAiacHoEgWCjxEfo0v0bNIMr3+OK0EfZecDh6538zEGQ2CmP7JyJw+O82mpbZq5a1j4svYpRMTEKc8gZ+Fp0h2bUH+p95XmQZTmr/utP1fxJkuiZOG70ZgGG1vPsAPgyi3lRbsFQG7rPX08AfMplsg013PKfP+R/5pucoatGHYpgBEsrtl8SC5hyx33soCBIZtnKrWQ4Ct60gRM8ivWfGoMUXMhK1r6KQP/zts2LvDRheECyOV6JBpG6+w="
+        api_key:
+          secure: "iIH6etl5iZatsffwMcjFNGFo4xnGpsnNBGAKjsuiAuL889fn8rFEMPbHBej/1sRaWpcZQOW6GnhRDPH2q+0EPM6fcYfZ+mIVEZlAvbucXiYm7chixjDXLnjm5WhsMLDKl162IrXvYuZgMIdHU3Sv89a1YlaI8Pmyyy+oDhP5pEq5g4fxGfekXqsfuafHtZ/7MSVcVjRdJmijMD+32sfKJ4xGZz78hTZauDtaT9D7dqKp3ODWhESEMptShgidzSkE5jM7pft47Zv/OajdoE3Mb7EEDX448BYX3NZ7OBW72VwqhM67mqQdABkGT9JUzUQViQgNxQL+ogeEbAJuASw8fAnI1GOoD8KdYAZc6fy93d88LqRdvN4yMuHmZm0ygbGNF/Lz/S44yCZACy3NI6p66hyy7nQKKKInXVo1U439sE2Bem8TwCrWE7WGdcoN3SxzMW7ByzCF4vP8i+WpjrYO+qldt+rEFONqjAZ2lQtXWYHX5LImBmT+C4NK8qu+X6n664/24slfnLc6t71CTyCjAnx9nMsyoOAcMtuAlGZW+o1syXVuwQJdDdxS1WkKYI0iSCnl5iQZLQaRzx2u1/TnJfHbijHSPNJGlaAOKRtVmoWEjI0rgLe9SjHuhO6dlEYCcZKT1A6PFR/hr7QON+bdP59ZbMjpkGVKVvKIiorIUwc="
         file_glob: true
         file: dist/*
         draft: true
