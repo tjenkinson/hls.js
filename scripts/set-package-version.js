@@ -19,7 +19,7 @@ try {
     // bump patch in version from latest git tag
     let currentVersion = getLatestVersionTag();
     if (!VALID_VERSION_REGEX.test(currentVersion)) {
-      throw new Error('Latest version tag invalid: ' + tag);
+      throw new Error('Latest version tag invalid: ' + currentVersion);
     }
     // remove v
     currentVersion = currentVersion.substring(1);
