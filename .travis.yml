@@ -12,6 +12,7 @@ env:
   global:
     - SAUCE_USERNAME=mangui
 stages:
+  - deploy
   - required
   - optional
 jobs:
