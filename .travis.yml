@@ -13,8 +13,8 @@ env:
     - SAUCE_USERNAME=mangui
 stages:
     # TODO move to after unit tests
-  - buildAndTest
   - release
+  - buildAndTest
   - releaseCanary
   - testFuncRequired
   - testFuncOptional
