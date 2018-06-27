@@ -13,8 +13,9 @@ env:
 stages:
     # TODO move to after unit tests
   - release
-  - buildAndTest
+    # TODO move to after unit tests
   - releaseCanary
+  - buildAndTest
   - testFuncRequired
   - testFuncOptional
 jobs:
@@ -35,6 +36,7 @@ jobs:
         file: dist/*
         draft: true
         skip_cleanup: true
+        all_branches: true
     # publish canary package if on master
     - stage: releaseCanary
       if: branch = master AND type != pull_request
