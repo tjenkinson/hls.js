@@ -36,7 +36,8 @@ jobs:
         file: dist/*
         draft: true
         skip_cleanup: true
-        all_branches: true
+        on:
+          tags: true
     # publish canary package if on master
     - stage: releaseCanary
       if: branch = master AND type != pull_request
