@@ -32,10 +32,9 @@ elif [ "${TRAVIS_MODE}" = "release" ] || [ "${TRAVIS_MODE}" = "releaseCanary" ];
   # make sure everything is fetched https://github.com/travis-ci/travis-ci/issues/3412
   git fetch --unshallow
   node ./scripts/set-package-version.js
-  # TODO put back
-  # npm run lint
-  # npm run build
-  # npm run test:unit
+  npm run lint
+  npm run build
+  npm run test:unit
   if [[ $(node ./scripts/check-already-published.js) = "not published" ]]; then
     # write the token to config
     # see https://docs.npmjs.com/private-modules/ci-server-config
