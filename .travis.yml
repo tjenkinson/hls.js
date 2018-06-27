@@ -24,12 +24,12 @@ jobs:
     # https://docs.travis-ci.com/user/build-stages/deploy-github-releases/
     # TODO move to after unit tests
     - stage: deploy
+      if: branch = master AND tag IS present
+      env: TRAVIS_MODE=release
       deploy:
-        if: branch = master AND tag IS present
         provider: releases
         api-key:
           secure: VagJLEDq/+ZzVmB9WvEGxUZVpW0EjsuiduAc96+pihq0cFaUGO+mM8Jyk2gJkQYZDDtZi/kEkM6FE0sSDJq2wkyrcMmZg9Q3aW58TkkG+AVw7eetVMmXnvXBMxHSEbjjNA5vVnmmi8UG6TUqyaGerQeuu9prXmWy7XMGImVFCkYXo1D7JW+UVH7EHmQwgwrGwBdm9mILeaFEvI69TIk/Mv5nhMlmlrX6mMYdukzvuYj7gPMRY1fWip1RYMluh+JmTzBqxHgGtwc8xe6LAzWsDLtJ4ZoznTShJChEAbZHhE1teHwbDa9Hv6AWlznEjuBvaPFBfnQBsLA2BM3NZr7zzsEB4DQ5BXrFs0f5hbr6qcd8d/CWuBY8Rtq7RJG4WCsKDo0jtTne4g9rZ/abAjvwbKJayD05RvZQw6/f6Ya6RVZEMEJOeIrn5xkJJld6MO9rWPilMUAsJhKqVhfRNULqX58ZZS/Eh2a2ewbG7Pe3emc6C3vEDwHF54W/gM3zCroBcpm6ESrYLvZETEUnsYOBjN4I2i+eNu8O/Sop6ASLqxfLS80PwXnRcCs7qwNeggWQ/m9M3VMGk68WVFgVLpeRytGKrHqFTER2T+grRvM7A2ln1Ijlo34tHMU+RdzwEi1t07zNw2XopkvAqgGaQcPNMP8GF9zWM1VHAMPs70rNoXk=
-        env: TRAVIS_MODE=release
         file_glob: true
         file: dist/*
         draft: true
