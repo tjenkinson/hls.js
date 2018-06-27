@@ -9,6 +9,7 @@ let newVersion = '';
 try {
   if (TRAVIS_MODE === 'release') {
     // write the version field in the package json to the version in the git tag
+    console.log('env', process.env);
     const tag = process.env.TRAVIS_TAG;
     if (!tag.test(VALID_VERSION_REGEX)) {
       throw new Error('Unsuported tag for release: ' + tag);
