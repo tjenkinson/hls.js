@@ -24,7 +24,7 @@ jobs:
     # https://docs.travis-ci.com/user/build-stages/deploy-github-releases/
     # TODO move to after unit tests
     - stage: deploy
-      if: branch = master AND tag IS present
+      if: tag IS present
       env: TRAVIS_MODE=release
       deploy:
         provider: releases
