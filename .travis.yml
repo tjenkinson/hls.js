@@ -31,7 +31,7 @@ jobs:
       deploy:
         provider: releases
         api-key:
-          secure: "dQOMBIgOXo9z3ieoAYW09bR7vT0dpvyjMYzyCr+Y+s7BcmrT7QGk9Yf6WcC7AAtcmqEmWmO9Hwmjbla9a18JSJ/toDop08pfR5dkxl0diYvV2RnJro0QFE7Hf19bHjXcPtxzJ2jbIQF6zxYw/ybnDDqJhO4ZWqIfZwU3AlZaFq38dfvta4N9BMOeXH50nx1u1b3DzfKdUiFTrQ+AkTt6c1V8gDGF9gZb74zvXv3P0WtUMHIWkVE6sL8fWqehqZ6aw3o5DLrn10+nztsYj2El8DOfVB7b1RFaZrDzqE/lX9/DL4w2wD/8TWNr6OXgotSty5GalSf5aln+gKYCnPfdvOob/ke/U9U296pI3Vjnplo0zlPY3b2z1gMIez3yFXjJfI5w7iOreYcAAg5gIEfoezBiC1hT/mTU+7VZih+Ygrg4+laycBxsKBvQRTFQz/+xVrFTINGar5pxTYf7PKZrDp4jh6xWxkP4GuEfuG9VK1DB18GhqYSgvoq93dx0nJ8JrjaDT9UXBp5eS4b3aYJkjwkrjXfiKZvX2BwjtHWTDKpyo6WhDRkY1vxY1zVKhAOeR0Ro3cnxDv2z0uJzIlizDivTrRsD6Q+QIKcFl19siQ6lpkScomRy7gZU1SnJDye8KWGUOgBf0KQv5EYrez4j6viAO7r1i7wmVtf5dHNZJL0="
+          secure: "UrDfvgVXoHiAIbV+tjSCx+qfSVNVD9jonC+5fT0sAiYBkK1zogAJAwD2CSW+btX5lpbgcjit0qj6Ts/fE6Nayr/XZ0HRjlajQVu28XcwP0nkzjuPhoakgPioNCG8y9KvMs9ATNz8uKVS9X0kAMAzxkn569VhV3mGM2Rq880eyr3lxspCG8KIoPv8z5k6dgpi9fnLtO6Ic/iQjBtfg3ywYz71LEzLIMqBvuW6r/kiqFq6DJxFnbRqiyP3p7XUrkALTyXFz5OGde+mQcMwsullGRs+Q8ubmd8Y1A7mplIEO0iRA7jm/Mz3W2Xo/NpLznrqRQDUb6N1NU6TTVJRVceXS66LGPUbBjDh5nunYv2YHXsUR0LUeUKZWmcMwa74dTlKgT2p/t6HaT+VejvvDLQaIxwzccIm8uMUZsMEq9qn4qE0a08H2VAiacHoEgWCjxEfo0v0bNIMr3+OK0EfZecDh6538zEGQ2CmP7JyJw+O82mpbZq5a1j4svYpRMTEKc8gZ+Fp0h2bUH+p95XmQZTmr/utP1fxJkuiZOG70ZgGG1vPsAPgyi3lRbsFQG7rPX08AfMplsg013PKfP+R/5pucoatGHYpgBEsrtl8SC5hyx33soCBIZtnKrWQ4Ct60gRM8ivWfGoMUXMhK1r6KQP/zts2LvDRheECyOV6JBpG6+w="
         file_glob: true
         file: dist/*
         draft: true
