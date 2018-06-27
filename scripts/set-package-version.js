@@ -9,9 +9,8 @@ let newVersion = '';
 try {
   if (TRAVIS_MODE === 'release') {
     // write the version field in the package json to the version in the git tag
-    console.log('env', process.env);
     const tag = process.env.TRAVIS_TAG;
-    if (!tag.test(VALID_VERSION_REGEX)) {
+    if (!VALID_VERSION_REGEX.test(tag)) {
       throw new Error('Unsuported tag for release: ' + tag);
     }
     // remove v
@@ -19,7 +18,7 @@ try {
   } else if (TRAVIS_MODE === 'releaseCanary') {
     // bump patch in version from latest git tag
     let currentVersion = getLatestVersionTag();
-    if (!currentVersion.test(VALID_VERSION_REGEX)) {
+    if (!VALID_VERSION_REGEX.test(currentVersion)) {
       throw new Error('Latest version tag invalid: ' + tag);
     }
     // remove v
