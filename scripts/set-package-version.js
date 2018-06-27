@@ -46,11 +46,10 @@ try {
 }
 process.exit(0);
 
-
 function getCommitNum() {
   return parseInt(require('child_process').execSync('git rev-list --count HEAD').toString(), 10);
 }
 
 function getLatestVersionTag() {
-  return require('child_process').execSync('git describe --match="v*"').toString();
+  return require('child_process').execSync('git describe  --match="v*"').toString();
 }
